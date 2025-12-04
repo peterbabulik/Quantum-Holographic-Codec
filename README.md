@@ -51,10 +51,69 @@ We use a simplified MERA-like architecture consisting of:
 *   **Mixers (CNOT)**: To create complex interference patterns.
 
 ### The Inverse
-In PennyLane, we use `qml.adjoint(circuit)` to automatically generate the inverse of the unitary evolution. This mathematically guarantees that:
-$$ U^{\dagger}_{Bob} \cdot U_{Alice} \cdot |\psi_{data}\rangle = |\psi_{data}\rangle $$
-*Provided $U_{Bob}$ uses the exact same parameters as $U_{Alice}$.*
+In PennyLane, we use qml.adjoint(circuit) to automatically generate the inverse of the unitary evolution. This mathematically guarantees that:
+U
+B
+o
+b
+†
+⋅
+U
+A
+l
+i
+c
+e
+⋅
+∣
+ψ
+d
+a
+t
+a
+⟩
+=
+∣
+ψ
+d
+a
+t
+a
+⟩
+U 
+Bob
+†
+​
+ ⋅U 
+Alice
+​
+ ⋅∣ψ 
+data
+​
+ ⟩=∣ψ 
+data
+​
+ ⟩
 
----
+Provided 
+U
+B
+o
+b
+U 
+Bob
+​
+ 
+ uses the exact same parameters as 
+U
+A
+l
+i
+c
+e
+U 
+Alice
+​
+ 
+.
 *Created by [Peter Babulik](https://github.com/peterbabulik)*
-```
